@@ -1,7 +1,7 @@
 #NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 
-; send stop command to whatever media playing software is playing (iTunes, Spotify, VLC...), lock the computer, wait 5 sec to make sure the lock screen appear and then shutdown the screen.
+; send stop command to whatever media playing software is playing (iTunes, Spotify, VLC...), lock the windows session, wait 5s to make sure the lock screen appear and then shutdown the screen.
 Send {Media_Stop}
 Sleep, 300
 DllCall("LockWorkStation")
